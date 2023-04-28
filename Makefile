@@ -78,7 +78,7 @@ publish:
 	git init
 	git remote add origin -f https://github.com/zeta-omega-chi/zoc_blog
 
-github: publish
+github:
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
