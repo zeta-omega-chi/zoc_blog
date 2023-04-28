@@ -77,10 +77,11 @@ publish:
 .git:
 	git init
 	git remote add origin -f https://github.com/zeta-omega-chi/zoc_blog
+	git remote set-url https://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@github.com/zeta-omega-chi/zoc_blog.git
 
 github: publish | .git
-	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
-	git push origin $(GITHUB_PAGES_BRANCH)
+	ghp-import -m "Generate Pelican site" -b gh-pages $(OUTPUTDIR)
+	git push origin gh-pages
 
 
 .PHONY: html help clean regenerate serve serve-global devserver publish github
