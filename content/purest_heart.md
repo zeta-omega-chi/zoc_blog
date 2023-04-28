@@ -2,7 +2,7 @@ Title: First Blog First
 Date: 2023-01-29
 Tags: test
 
-# 我来试水啦
+# 试水试水
 # $\zeta \Omega \chi$
 我看到了我的爱恋
 我飞到她的身边
